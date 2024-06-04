@@ -21,6 +21,8 @@ calculation = {
     '**': power
 }
 
+is_completed = False
+
 def calculator():
     print('\n\n')
     print("""Hey there, I am your calculator. 
@@ -30,8 +32,8 @@ def calculator():
 
     def answer(num_1, num_2, operator):
         return round(calculation[operator](num_1, num_2),1)
-
-    is_completed = False
+    
+    global is_completed
 
     while not is_completed:
 
